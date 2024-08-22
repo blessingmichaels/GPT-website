@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Welcome to DFH, your one-stop shop for all sewing needs. Discover our range of fabrics, tools, and tutorials.">
+    <title>DFH - Your Sewing Essentials</title>
+    <link rel="stylesheet" href="./style.css"> <!-- Link to external CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <!-- <nav>
+            <a href="#home" class="logo">
+                <img src="img/logo.jfif" alt="DFH Logo">
+            </a>
+            <ul class="nav" id="navbar">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#newsletter">Newsletter</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav> -->
+
+        <nav class="navbar">
+            <a href="#home" class="logo">
+                <img src="img/logo.jfif" alt="DFH Logo">
+            </a>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span class="menu-icon"></span>
+                <span class="menu-icon"></span>
+                <span class="menu-icon"></span>
+            </button>
+            <ul class="nav" id="navbar">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#newsletter">Newsletter</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Welcome to Dreamz .. House</h1>
+            <p>Your ultimate destination for sewing supplies and inspiration</p>
+            <a href="#features" class="cta-button">Discover More</a>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <h2>Our Features</h2>
+        <div class="feature">
+            <img src="img/fabric3.jfif" alt="Quality Fabrics">
+            <h3>Quality Fabrics</h3>
+            <p>Choose from a wide range of high-quality fabrics to suit your every need.</p>
+        </div>
+        <div class="feature">
+            <img src="img/tools4.jfif" alt="Sewing Tools">
+            <h3>Sewing Tools</h3>
+            <p>Find all the essential tools to make your sewing projects a success.</p>
+        </div>
+        <div class="feature">
+            <img src="img/tutorials2.jfif" alt="Tutorials">
+            <h3>Helpful Tutorials</h3>
+            <p>Learn new techniques and tips with our easy-to-follow tutorials.</p>
+        </div>
+        <div class="feature">
+            <img src="img/image3.jfif" alt="Tutorials">
+            <h3>New Techniques</h3>
+            <p>Learn new techniques and tips with our easy-to-follow tutorials.</p>
+        </div>
+    </section>
+
+    <section class="testimonials" id="testimonials">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial">
+            <p>"DFH has transformed my sewing projects. The fabric selection is amazing, and the tutorials are
+                incredibly helpful!"</p>
+            <h4>- Emma L.</h4>
+        </div>
+        <div class="testimonial">
+            <p>"I love the quality of the tools and materials. DFH has everything I need to create beautiful
+                garments."</p>
+            <h4>- Mark R.</h4>
+        </div>
+        <div class="testimonial">
+            <p>"The customer service is fantastic, and the tutorials have taught me so much. Highly recommend DFH!"
+            </p>
+            <h4>- Sarah K.</h4>
+        </div>
+    </section>
+
+    <section class="newsletter" id="newsletter">
+        <h2>Subscribe to Our Newsletter</h2>
+        <p>Get the latest updates, tips, and exclusive offers straight to your inbox.</p>
+        <form action="subscribe.php" method="post">
+            <input type="email" name="email" placeholder="Enter your email" required>
+            <button type="submit" class="cta-button">Subscribe</button>
+        </form>
+    </section>
+
+    <footer id="contact">
+        <p>&copy; 2024 DFH. All rights reserved.</p>
+        <p><a href="mailto:blessingmichaels17@gmail.com" style="color: white;">blessingmichaels17@gmail.com</a></p>
+    </footer>
+
+
+
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navbar = document.getElementById('navbar');
+
+            menuToggle.addEventListener('click', function () {
+                navbar.classList.toggle('active');
+                menuToggle.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
